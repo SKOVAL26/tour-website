@@ -1,0 +1,99 @@
+/* App.css */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Основные стили для навигации */
+.navbar {
+  background-color: #0033A0; /* Темно-синий фон */
+}
+
+.nav-link {
+  color: #FFFFFF; /* Белый цвет текста */
+  transition: color 0.3s ease; /* Плавный переход цвета текста */
+}
+
+.nav-link:hover {
+  color: #FFD700; /* Цвет при наведении (золотой) */
+}
+
+.btn-outline-light {
+  border-radius: 20px; /* Закругленные углы кнопки */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход цвета */
+}
+
+.btn-outline-light:hover {
+  background-color: #FFD700; /* Цвет фона при наведении (золотой) */
+  color: #0033A0; /* Цвет текста при наведении (темно-синий) */
+}
+
+/* Стили для логотипа */
+.logo {
+  border-radius: 50%; /* Полное закругление */
+  overflow: hidden; /* Скрытие лишнего содержимого */
+}
+
+/* Закругленные углы для поля ввода */
+.form-control {
+  border-radius: 20px; /* Закругленные углы поля ввода */
+}
+.content {
+  padding-top: 56px; /* Высота навигационной панели */
+}
+.carousel-item {
+  height: 100vh; /* Высота карусели равна высоте экрана */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Сохраняет пропорции изображения, обрезая лишнее */
+}
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .navbar {
+    text-align: center; /* Центрирование текста для мобильных устройств */
+  }
+
+  .nav-link {
+    padding: 10px 20px; /* Увеличение отступов для ссылок */
+  }
+}

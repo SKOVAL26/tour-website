@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import CarouselBox from '../Components/CarouselBox';
+import ContactCircle from '../Components/ContactCircle'; // Импорт компонента
 
 class Home extends Component {
     render() {
         return (
-           <CarouselBox/>
+            <div>
+                <CarouselBox /> {/* Карусель */}
+                <ContactCircle /> {/* Кнопка-кружок с формой */}
+            </div>
         );
     }
 }
